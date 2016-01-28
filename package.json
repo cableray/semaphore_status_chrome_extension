@@ -37,6 +37,13 @@
     "node-libs-browser": ">=0.4.0"
   },
   "devDependencies": {
-    "chokidar": "^1.0.5"
+    "chokidar": "^1.0.5",
+    "standard": "*"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "global": [
+      "chrome"
+    ]
   }
 }
