@@ -15,8 +15,9 @@
     "default_title": "Semaphore status popup action",
     "default_popup": "popup/index.html"
   },
-  "chrome_url_overrides" : {
-    "newtab": "newtab/index.html"
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options/index.html"
   },
   "permissions": [
     "background",
