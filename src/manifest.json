@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "homepage_url": "https://github.com/schovi/webpack-chrome-extension",
+  "homepage_url": "https://github.com/welltok/semaphore_status",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
@@ -12,7 +12,7 @@
     "scripts": ["background/index.js"]
   },
   "page_action": {
-    "default_title": "Webpack chrome extension popup action",
+    "default_title": "Semaphore status popup action",
     "default_popup": "popup/index.html"
   },
   "chrome_url_overrides" : {
