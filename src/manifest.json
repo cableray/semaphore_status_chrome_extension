@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "homepage_url": "https://github.com/welltok/semaphore_status",
+  "homepage_url": "https://github.com/cableray/semaphore_status_chrome_extension",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

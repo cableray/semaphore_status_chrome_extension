@@ -1,9 +1,3 @@
-import welcome from 'shared/welcome'
-
-welcome('background/index.js')
-
-// Setting popup icon
-
 // When we defined browser_action
 if (chrome.browserAction) {
   chrome.browserAction.setIcon({
