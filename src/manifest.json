@@ -20,6 +20,7 @@
     "page": "options/index.html"
   },
   "permissions": [
+    "storage",
     "background",
     "tabs"
   ],
