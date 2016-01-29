@@ -1,6 +1,14 @@
 body {
   width: 600px;
-  font-size: 1.5em;
-  background-color: #222;
-  color: #bada55;
+  font-size: 1em;
+  background-color: #f2f2e9;
+}
+
+.server-name {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+a:link {
+  color: rgb(66, 66, 66);
 }
