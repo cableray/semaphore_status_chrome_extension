@@ -24,6 +24,12 @@ You should do this if you want to test out the checked out version of the compon
 6. Click the options link and put in
   - the project hash (found in project setting on semaphore in the Admin tab)
   - your api auth token (found in your semaphore account settings)
+  - **note:** if the options page is empty:
+    1. right click on it and open the inspector
+    2. you should see an error in the console saying it can't load a page from localhost
+    3. right click the link to the page it can't load and open in a new tab
+    4. chrome should complain that the page is insecure. click the link that says "advanced" and then click "allow"
+    5. reload the extensions page and try step 3 again
 7. Find extension icon (blue webpack image) right from adress bar. click it to get project server statuses!
 8. You can edit your codebase with almost 100% hot/full reload support.
 
