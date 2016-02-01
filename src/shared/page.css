@@ -2,13 +2,63 @@ body {
   width: 600px;
   font-size: 1em;
   background-color: #f2f2e9;
+  margin: 0;
+  color: rgb(66, 66, 66);
 }
 
 .server-name {
-  color: darkgreen;
   font-weight: bold;
 }
 
-a:link {
+ul.server-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.server-list li {
+  padding: 7px 28px;
+  margin: 0;
+  font-size: .85em;
+  background: url(connector-server.png) 6px 50% no-repeat;
+  background-size: 15px auto;
+}
+
+.server-list li.passed {
+  background-color: #e6f4ca;
+  border-color: #cfe0ae;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+}
+
+.server-list li.failed {
+  background-color: #f4d9ca;
+  border-top: 1px solid #e7cabb;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset;
+}
+
+.server-list li.pending {
+    background-color: #ddeff8;
+    border-top: 1px solid #bacfdc;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset;
+}
+
+a:link, a:visited, a:active{
   color: rgb(66, 66, 66);
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.hash {
+  background-color: #e7e7da;
+  color: #343434;
+  font-weight: normal;
+  font-family: monospace;
+  font-size: .85em;
+  line-height: 1;
+  padding: .15em .35em;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
 }

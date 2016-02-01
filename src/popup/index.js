@@ -21,7 +21,7 @@ class ServerStatus extends React.Component {
 
   render() {
     return (
-      <ul>
+      <ul className='server-list'>
         {map(this.state.semaphoreResponse, (response) => (
           <Server key={response.id} data={response} />
           ))}

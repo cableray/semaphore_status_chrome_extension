@@ -17,15 +17,21 @@ class Server extends React.Component {
 
   render() {
     const {
-      message,
-      url: github_url,
-      id: commit_sha
-    } = this.state.semaphoreResponse.commit
+      result: status,
+      server_html_url,
+      build_html_url,
+      commit: {
+        message,
+        url: github_url,
+        id: commit_sha
+      }
+    } = this.state.semaphoreResponse
 
     return (
-      <li>
-        <span className='server-name'>{this.props.data.name}</span> -
-        <a href={github_url} title={commit_sha} target='_blank'>{message}</a>
+      <li className={status}>
+        <a className='server-name' href={server_html_url} title='server page' target='_blank'>{this.props.data.name}</a> -{' '}
+        <a href={build_html_url} title='build page' target='_blank'>{message}</a>{' '}
+        <a href={github_url} title='github repo' className='hash' target='_blank'>{(commit_sha||'').substr(0,7)}</a>
       </li>
       )
   }
