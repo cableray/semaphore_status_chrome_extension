@@ -43,7 +43,6 @@
     "standard": "*"
   },
   "standard": {
-    "parser": "babel-eslint",
     "global": [
       "chrome"
     ]
