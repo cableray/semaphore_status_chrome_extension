@@ -25,7 +25,7 @@ class Server extends React.Component {
     return (
       <li>
         <span className='server-name'>{this.props.data.name}</span> -
-        <a href={github_url} title={commit_sha}>{message}</a>
+        <a href={github_url} title={commit_sha} target='_blank'>{message}</a>
       </li>
       )
   }
