@@ -27,7 +27,7 @@ class Server extends React.Component {
       }
     } = this.state.semaphoreResponse
 
-    return (
+    return !!status && (
       <li className={status}>
         <a className='server-name' href={server_html_url} title='server page' target='_blank'>{this.props.data.name}</a> -{' '}
         <a href={build_html_url} title='build page' target='_blank'>{message}</a>{' '}
